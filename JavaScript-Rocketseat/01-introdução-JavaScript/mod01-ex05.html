@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+    <body>
+        <script>
+        // Módulo 01 - Exercício 05
+        // Dado o seguinte vetor de objetos:
+        // Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array com um separador utilize o join.
+        // O Diego possui as habilidades: Javascript, ReactJS, Redux
+        // O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+       
+       var usuarios = [
+        {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        },
+        {
+            nome: "Maria",
+            habilidades: ["Javascript", "ReactJS"]
+        }
+        ];
+
+
+        function candidato(array){
+        for (var value of array) {
+            console.log('O(a)', value.nome, 'possui as habilidades: ', value.habilidades.join(', '), '.');
+        }
+        }
+        candidato(usuarios);
+
+
+        </script>
+    </body>
+</html>

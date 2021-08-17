@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso de JavaScript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" id="nome" />
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+        
+        // Como buscar uma informação dentro da nossa árvore de elementos dentro do nosso script.
+           
+        //    var inputElement = document.getElementsByTagName('input');
+        //    console.log(inputElement); // assim aparece HTMLCollection
+
+        //    var inputElement = document.getElementsByTagName('input')[0];
+        //    console.log(inputElement); // com [0] só aparece o primeiro input
+
+        // outra forma é a querySelector - ele deixa a gente percorrer a nossa DOM até encontrar o elemento.
+        // ele retorna um único elemento
+
+        // querySelectorALL - ele retorna todos os elementos
+
+
+        // var inputElement = document.querySelector('div#app input');
+        //    console.log(inputElement); 
+
+        // var inputElement = document.querySelector('input[name=nome]');
+        //    console.log(inputElement); 
+
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+            
+            alert(text);
+        }
+
+        </script>
+    </body>
+</html>

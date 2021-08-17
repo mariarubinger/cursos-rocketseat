@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Curso de JavaScript</title>
+    </head>
+    <body>
+        <script>
+            // CONDICIONAL SIMPLES:
+            // M, F
+            // Masculino, Feminino
+            // == verifica se os valores são iguais
+            // === verifica se o valor e se o tipo são iguais            
+            
+            function retornaSexo(sexo) {
+                if (sexo === 'M') {
+                    return 'Masculino';
+                } else if (sexo === 'F') 
+                    return 'Feminino';
+                else {
+                    return 'Outro';
+                }
+            }
+
+            var resultado = retornaSexo('B');
+            console.log(resultado);
+
+
+            // SWITCH CASE: pafra verificar a igualdade de valores de uma mesma variável múltiplas vezes.
+            
+            function retornaSexo(sexo) {
+                    switch (sexo) {
+                        case 'M':
+                            return 'Masculino';
+                        case 'F':
+                            return 'Feminino';
+                        default:
+                            return 'Outro';
+                    }
+                }
+
+            var resultado = retornaSexo('M');
+            console.log(resultado); 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+</head>
+
+    <body>
+        <script>
+        // Módulo 01 - Exercício 02
+        // Crie uma função que dado um intervalo (entre x e y) exiba todos número pares
+
+        // if (x % 2 == 0) - O operador % é chamado de módulo. Ele serve para você verificar qual o resto da divisão de um número por outro.
+        // Está verificando se o resto da divisão de x por 2 resulta em 0, ou seja, está verificando se x é múltiplo de 2. 
+        
+        
+            var contador = 0;
+            function pares(x, y) {
+                for (var i = x; i <= y; i++) {
+                    if (i % 2 == 0) {
+                    console.log(i);
+                    contador++;
+                    };
+                };
+            };
+
+            pares(1, 10);
+            console.log('Foram impressos ' + contador + ' números pares.');
+
+        </script>
+    </body>
+</html>

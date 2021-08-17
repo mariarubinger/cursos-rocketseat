@@ -1,0 +1,122 @@
+React - Rocketseat <<< INTRODUÇÃO >>>
+Componentização - Component
+Propiedades - Props
+Roteamento com o react-router-dom
+Ciclos de Vida - utilização do componente componentDidMount
+Utilização de API
+Utilização do estado - State
+Utilização de propriedades 
+Estilização - styles.css
+
+react-redux: Biblioteca JavaScript
+Comando: npm i react-redux
+
+rox-react-native
+Comando: npm i rox-react-native --save 
+
+Render Proxy 
+__________________________________
+
+1) Verificar no terminal as versões do:
+node -v
+npm -v
+yarn -v
+
+2) Comando: npm install -g create-react-app
+
+3) Criar um novo projeto:
+npx create-react-app AQUI VAI O NOME DO PROJETO
+
+4) Acessa a pasta que está o arquivo e clica em:
+npm start ou yarn start
+
+node_modules - fica as dependencias do nosso projeto
+
+public - todos os arquivos que serão acessíveis para o usuário final
+
+No arquivo manifest.json que consegue criar um PWA
+Progressive Web Apps
+é uma aplicação web com tecnologias que nos permite uma experiência de uso muito
+próxima da oferecida pelos mobile apps.
+
+src - é onde vai ficar todo nosso código da aplicaççao
+
+react-dom: integração do react pra Web, pra conseguir controlar a árvore de elementos HTML.
+
+react-scripts: faz transpilação de código; converter códigos mais novos em mais antigos pra alguns navegadores enteder.
+
+5) Aplicação rodando no http://localhost:3000
+Comando: npm start
+
+6) O arquivo index.js é onde inicia toda a aplicação
+
+7) Função que é usada uma única vez dentro do arquivo index.js
+ReactDOM.render 
+
+8) App é um Component do React
+Ele é uma classe com o nome App que extende a classe componente do React por isso é um Component
+
+class App extends Component
+
+Conjunto de parte visual e estrututural (HTML)
+Parte funcional (Javascript)
+Parte de estilização (CSS)
+
+9) TODO COMPONENTE tem um método OBRIGATÓRIO que chama render() {} que precisa obrigatoriamente retornar um conteúdo jsx (HTML),
+invés do class a gente utiliza className.
+
+
+render() é onde a gente vai renderizar todos os componentes da tela
+
+
+10) Criação do primeiro componente que será o Header - index.js
+
+
+11) Buscando produtos da API - Node.JS API
+Acessar informações de uma API rest (endereço externo) precisa da biblioteca axios
+
+Comando: yarn add axios
+Criar uma pasta com o nome "services" e um arquivo "api.js"
+
+12) Métodos de Ciclo de Vida dos Componentes
+ 
+//método executado assim que o componente é exibido em tela   
+componentDidMount() {
+	this.loadProducts();
+}
+
+loadProducts = () => {}
+
+loadProducts é uma ARROW FUNCTION.
+É utilizada porque a ARROW FUNCTION não subscreve o valor do this, ele continua mantendo o valor do escopo fora da função.
+
+const response: é para acessar a API
+
+async/await é uma maneira menos verboza de lidar com promises no javascript.
+
+o await só pode ser usado dentro de uma async function.
+
+async faz uma função retornar uma promise (promessa)
+await faz uma função esperar uma promise (promessa)
+
+
+14) Comando: yarn react-router-dom
+
+Criar o arquivo "routes.js"
+Criar um component chamado Routes utilizando uma função
+BrowserRouter: Ele defini que estamos usando as rotas através de um browser
+
+Switch: permite apenas que uma única rota seja chamada ao mesmo tempo 
+
+
+______
+>>> JavaScript <<<
+
+O script é a primeira coisa a ser executada
+<script> pode ser escrito em qualquer lugar do HTML mas melhor colocar dentro do head
+
+Introdução a FUNÇÕES
+São blocos de código que executam uma função;
+Permite chamar esse bloco pelo seu nome;
+Um função pode ser chamada por qualquer elemento;
+
